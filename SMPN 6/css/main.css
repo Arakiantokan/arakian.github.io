@@ -1,0 +1,693 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 80px; */
+
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #303030;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: #6b92e5; */
+    background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    /* background: #ecf0f3; */
+    background: rgba(238, 235, 222, 0.14);
+    border-radius: 30px;
+}
+
+/* akhir scrollbar */
+
+/* Header */
+header {
+    z-index: 1;
+    position: absolute;
+}
+
+header .navbar {
+    background-color: #fff;
+}
+
+header .navbar a {
+    font-family: 'Poppins', sans-serif;
+    color: #192534;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+header .brand {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 5px 10px;
+}
+
+header .navbar .btn {
+    background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 35px 33px -13px rgba(255, 255, 255, 0.24);
+    border-radius: 35px;
+    margin-left: 20px;
+}
+
+header .navbar .learn {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Akhir header */
+
+/* Hero section */
+.hero {
+    margin-top: 50px;
+    position: relative;
+    background: linear-gradient(229.38deg, rgba(236, 237, 253, 0.58) 6.87%, rgba(255, 237, 237, 0.63) 42.22%, rgba(252, 228, 183, 0.26) 72.13%);
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 10px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.hero .tekx {
+    position: relative;
+    margin-top: 200px;
+}
+
+.hero h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #180B3E;
+}
+
+.hero h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: #180B3E;
+}
+
+.hero p {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 145.9%;
+}
+
+.hero .btn {
+    position: absolute;
+    width: 213px;
+    height: 65px;
+    background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
+    box-shadow: 0px 28px 30px -11px rgba(0, 0, 0, 0.25), inset 0px 35px 33px -13px rgba(255, 255, 255, 0.24);
+    border-radius: 35px;
+    transition: all 2s;
+    -webkit-transition: all 1s;
+}
+
+.hero button a {
+    position: relative;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero .btn:hover {
+    background: linear-gradient(216.58deg, #B469F7 0%, #8F26EE 100%);
+}
+
+.hero .arrow img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 331.66px;
+}
+
+
+.hero img {
+    position: relative;
+    width: 590px;
+    height: 510px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.hero .gambar {
+    animation: gerak 5s linear infinite;
+}
+
+@keyframes gerak {
+
+    0%,
+    100% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+}
+
+/* Akhrir Hero Section */
+
+
+/* sambutan */
+.sambutan {
+    margin-top: 100px;
+}
+
+.sambutan .prakata h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 75.9%;
+    margin-top: 70px;
+    color: #1C0268
+}
+
+.sambutan p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 145.9%;
+    text-align: justify;
+    margin-top: 50px;
+    color: #180B3E;
+}
+
+.sambutan .foto img {
+    margin-top: 50px;
+}
+
+.sambutan .nama {
+    margin-top: 20px;
+}
+
+.sambutan .nama h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 75.9%;
+}
+
+.sambutan .nama h5 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Akhir Sambutan */
+
+
+
+/* Fasilitas Section*/
+.fasilitas {
+    margin-top: 100px;
+}
+
+.fasilitas h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 75.9%;
+    color: #1C0268;
+
+}
+
+.fasilitas .gb-text {
+    display: flex;
+}
+
+.fasilitas .daftar {
+    margin-top: 100px;
+    position: relative;
+    display: grid;
+}
+
+.fasilitas .daftar a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1C0268;
+}
+
+.fasilitas .daftar a img {
+    padding: 30px;
+}
+
+/* Akhir fasilitas Section*/
+
+
+/*  Berita & Pengumuman */
+.info {
+    margin-top: 100px;
+    /* background-color: rgba(238, 235, 222, 0.11); */
+    display: flex;
+}
+
+.info .kotak-1 {
+    /* width: 350px; */
+    height: 333px;
+    background: #F7F7F7;
+    border: 10px solid #FFFFFF;
+    box-shadow: 0px 48px 25px -25px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    margin-top: 20px;
+    position: relative;
+    padding: 20px;
+}
+
+.info .kotak-2 {
+    /* width: 350px; */
+    height: 333px;
+    background: #F7F7F7;
+    border: 10px solid #FFFFFF;
+    box-shadow: 0px 48px 25px -25px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    margin-top: 45px;
+    position: relative;
+    padding: 20px;
+}
+
+.info .berita h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 75.9%;
+    color: #1C0268;
+}
+
+.info .berita h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #1C0268;
+}
+
+.info .berita p {
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: justify;
+    color: #1C0268;
+    margin-top: 30px;
+}
+
+.info .btn {
+    text-align: center;
+    width: 120px;
+    height: 45px;
+    left: 230px;
+    top: 3001px;
+    background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
+    box-shadow: 0px 28px 30px -11px rgba(0, 0, 0, 0.25), inset 0px 35px 33px -13px rgba(255, 255, 255, 0.24);
+    border-radius: 18px;
+}
+
+.info button a {
+    position: relative;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.info .btn:hover {
+    background: linear-gradient(216.58deg, #B469F7 0%, #8F26EE 100%);
+}
+
+.info .pengumuman h3 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 75.9%;
+    color: #1C0268;
+}
+
+.info .kotak-3 {
+    /* width: 286.66px; */
+    height: 320px;
+    padding: 20px;
+    background: linear-gradient(216.58deg, #B469F7 0%, #8F26EE 100%);
+    box-shadow: 0px 48px 25px -25px rgba(174, 93, 246, 0.4);
+    border-radius: 30px;
+    position: relative;
+    margin-top: 38px;
+    margin-left: auto;
+}
+
+.info .pengumuman h4 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.info .kotak-3 p {
+    font-family: Poppins;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: justify;
+    color: #fff;
+    margin-top: 30px;
+}
+
+
+.info .lihat-lebih {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 50px;
+    line-height: 75.9%;
+    color: #7E7E7E;
+    text-decoration: none;
+    float: right;
+}
+
+/* Akhir Berita & Pengumuman */
+
+
+/* Kontak */
+.kontak {
+    background-color: rgba(255, 127, 80, 0.5);
+    margin-top: 100px;
+}
+
+.kontak h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 75.9%;
+    color: #192534;
+    margin-top: 50px;
+}
+
+.kontak label {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 75.9%;
+    color: #7E7E7E;
+}
+
+.kontak input,
+.kontak textarea {
+    border-radius: 10px;
+}
+
+.kontak .tekx .btn {
+    background-color: #0A0909;
+    box-shadow: -5px 5px 17px rgba(7, 7, 7, 0.25);
+    border-radius: 18px;
+    width: 100px;
+    height: 40px;
+    float: right;
+    margin-top: 30px;
+}
+
+.kontak .gambar {
+    animation: atas 5s linear infinite;
+}
+
+@keyframes atas {
+
+    0%,
+    100% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* akhir kontak */
+
+/* Footer */
+footer {
+    background: #000000;
+}
+
+footer .peta {
+    margin-top: 60px;
+}
+
+footer .peta .jalan {
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+footer .menu-list {
+    color: #9e9e9e;
+    text-decoration: none;
+    display: grid;
+    margin-top: 50px;
+}
+
+footer hr {
+    color: #FFFFFF;
+}
+
+footer .saly {
+    color: #a3a3a3;
+    text-decoration: none;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+footer .copyright {
+    color: #a3a3a3;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+footer .design {
+    color: #a3a3a3;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/* akhir footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive*/
+
+@media(max-width: 768px) {
+
+    header .brand {
+        font-size: 20px;
+    }
+
+    /* Hero Section */
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 11px;
+    }
+
+    .hero .btn {
+        width: 157px;
+        height: 48px;
+    }
+
+    .hero button a {
+        font-size: 18px;
+    }
+
+    .hero img {
+        width: 226px;
+        height: 210px;
+        margin-left: 40%;
+    }
+
+    .hero .tekx {
+        order: 2;
+        margin-top: 150px;
+    }
+
+    .hero .gambar {
+        order: 1;
+        width: auto;
+    }
+
+    .hero .arrow img {
+        display: none;
+        /* right: 21.15px;
+        top: 181.62px; */
+    }
+
+    /* Akhir Hero Section */
+
+
+
+    /* sambutan */
+    .sambutan {
+        margin-top: 5px;
+    }
+
+    .sambutan .chat img {
+        width: 54px;
+        height: 39.95px;
+        margin-top: 10px;
+    }
+
+    .sambutan .prakata h2 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-top: 40px;
+        line-height: 75.9%;
+    }
+
+    .sambutan p {
+        font-weight: 300;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .sambutan .foto img {
+        width: 90px;
+        height: 90px;
+        margin-top: 15px;
+    }
+
+    .sambutan .nama h4 {
+        font-size: 16px;
+    }
+
+    .sambutan .nama h5 {
+        font-size: 14px;
+    }
+
+    /* Akhir Sambutan */
+
+
+
+    /* Fasilitas  Section*/
+
+    .fasilitas h2 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .fasilitas .gb-text img {
+        width: 221px;
+        height: 221px;
+    }
+
+    .fasilitas .daftar {
+        margin-top: 10px;
+    }
+
+    .fasilitas .daftar a {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .fasilitas .daftar a img {
+        width: 20px;
+        height: 24px;
+    }
+
+    /* Akhir Fasilitas section */
+
+
+    /* info section */
+
+    .info h3 {
+        text-align: center;
+    }
+
+    .info .pengumuman {
+        margin-top: 100px;
+    }
+
+    /* Kontak */
+
+    .kontak .gambar {
+        order: 2;
+    }
+
+    .kontak .gambar img {
+        width: 220px;
+        height: 325px;
+    }
+
+    .kontak .tekx {
+        order: 1;
+    }
+
+    /* Akhir kontak */
+
+
+    /* footer */
+    footer .menu-list {
+        margin-top: 5px;
+    }
+
+}
