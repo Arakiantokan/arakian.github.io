@@ -33,11 +33,17 @@ html {
 body::-webkit-scrollbar-button:start:decrement,
 ::-webkit-scrollbar-button:end:increment {
     /* background: #ecf0f3; */
-    background: rgba(238, 235, 222, 0.14);
+    
     border-radius: 30px;
 }
 
 /* akhir scrollbar */
+body {
+    margin: 10px;
+    font-family: 'poppins';
+    background: rgba(238, 235, 222, 0.14);
+}
+
 
 /* Header */
 header {
@@ -86,13 +92,14 @@ header .navbar .learn {
     margin-top: 50px;
     position: relative;
     background: linear-gradient(229.38deg, rgba(236, 237, 253, 0.58) 6.87%, rgba(255, 237, 237, 0.63) 42.22%, rgba(252, 228, 183, 0.26) 72.13%);
+    background-position: center;
     opacity: 0.8;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     border-radius: 10px;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    display: flex;
+    display: grid;
 }
 
 .hero .tekx {
@@ -123,7 +130,9 @@ header .navbar .learn {
 }
 
 .hero .btn {
-    position: absolute;
+    display: grid;
+    place-content: center;
+    margin-bottom: 50px;
     width: 213px;
     height: 65px;
     background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
@@ -164,6 +173,8 @@ header .navbar .learn {
 }
 
 .hero .gambar {
+    display: grid;
+    place-content: center;
     animation: gerak 5s linear infinite;
 }
 
@@ -237,6 +248,8 @@ header .navbar .learn {
 /* Fasilitas Section*/
 .fasilitas {
     margin-top: 100px;
+    display: grid;
+    justify-content: center;
 }
 
 .fasilitas h2 {
@@ -251,15 +264,19 @@ header .navbar .learn {
 
 .fasilitas .gb-text {
     display: flex;
+    align-items: center;
 }
 
 .fasilitas .daftar {
     margin-top: 100px;
     position: relative;
     display: grid;
+    place-content: center;
 }
 
 .fasilitas .daftar a {
+    display: grid;
+    align-items: center;
     text-decoration: none;
     font-family: Poppins;
     font-weight: 600;
@@ -268,7 +285,7 @@ header .navbar .learn {
 }
 
 .fasilitas .daftar a img {
-    padding: 30px;
+    
 }
 
 /* Akhir fasilitas Section*/
@@ -539,6 +556,10 @@ footer .design {
     }
 
     /* Hero Section */
+
+    .hero {
+        height: 100vh;
+    }
     .hero h2 {
         font-size: 25px;
     }
@@ -563,7 +584,6 @@ footer .design {
     .hero img {
         width: 226px;
         height: 210px;
-        margin-left: 40%;
     }
 
     .hero .tekx {
@@ -573,7 +593,6 @@ footer .design {
 
     .hero .gambar {
         order: 1;
-        width: auto;
     }
 
     .hero .arrow img {
@@ -691,3 +710,7 @@ footer .design {
     }
 
 }
+
+
+/* mobile */
+
