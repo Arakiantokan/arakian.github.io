@@ -270,18 +270,22 @@ header .navbar .learn {
 .fasilitas .daftar {
     margin-top: 100px;
     position: relative;
+}
+
+.fasilitas .daftar a span {
     display: grid;
     place-content: center;
 }
 
 .fasilitas .daftar a {
     display: grid;
-    align-items: center;
     text-decoration: none;
+    place-content: center;
     font-family: Poppins;
     font-weight: 600;
     font-size: 20px;
     color: #1C0268;
+    padding: 25px;
 }
 
 
@@ -347,10 +351,8 @@ header .navbar .learn {
 
 .info .btn {
     text-align: center;
-    width: 120px;
-    height: 45px;
-    left: 230px;
-    top: 3001px;
+    width: 100px;
+    height: 35px;
     background: linear-gradient(274.77deg, #F56767 1.45%, #FF9162 87.77%, #FCFF6C 125.13%);
     box-shadow: 0px 28px 30px -11px rgba(0, 0, 0, 0.25), inset 0px 35px 33px -13px rgba(255, 255, 255, 0.24);
     border-radius: 18px;
@@ -361,8 +363,7 @@ header .navbar .learn {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px;
-    text-align: justify;
+    line-height: 10px;
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -401,10 +402,10 @@ header .navbar .learn {
 }
 
 .info .kotak-3 p {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 15px;
     line-height: 23px;
-    text-align: justify;
+    /* text-align: justify; */
     color: #fff;
     margin-top: 30px;
 }
@@ -462,7 +463,7 @@ header .navbar .learn {
     width: 100px;
     height: 40px;
     float: right;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 .kontak .gambar {
