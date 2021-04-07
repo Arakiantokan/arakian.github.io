@@ -8,12 +8,32 @@
 }
 
 h3 {
-    margin: 50px auto;
-    font-family: 'Nunito';
+    margin: 0 0 20px;
+    font-family: 'Poppins';
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     color: #15203D;
+    line-height: 1.06;
+    letter-spacing: 1.50px;
+}
+
+.section-title {
+    position: relative;
+    padding: 0 0 20px;
+}
+
+
+.section-title::before {
+    width: 40px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: #4FBBF9;
+    transform: translateX(-50%);
+
 }
 
 /* ************************* Intro section ************************************ */
@@ -45,13 +65,14 @@ h3 {
     line-height: 89px;
     color: #262626;
     padding-bottom: 20px;
+    letter-spacing: 1.22px;
 }
 
 .intro .left p {
     font-family: 'Nunito';
-    font-style: normal;
+    letter-spacing: 1.22px;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 40px;
     text-align: justify;
     color: #767676;
@@ -59,11 +80,12 @@ h3 {
 }
 
 .intro .left button {
-    width: 210px;
-    height: 65px;
+    margin-top: 30px;
+    width: 170px;
+    height: 55px;
     background: #262626;
-    /* box-shadow: 0px 19px 15px -10px rgba(16, 29, 64, 0.23); */
-    /* box-shadow: 0px 15px 17px -7px rgba(13, 17, 28, 0.26); */
+    box-shadow: 0 11px 36px 0 rgba(70,89,138,.25);
+    letter-spacing: 1.22px;
     border-radius: 5px;
     border: 0;
     font-family: 'Nunito';
@@ -109,6 +131,9 @@ h3 {
 
 
 /* **************** Wid Section ********************* */
+.ido {
+    padding-top: 150px;
+}
 
 .wid {
     display: flex;
@@ -117,6 +142,7 @@ h3 {
     min-height: 100vh;
     overflow: hidden;
     width: 60%;
+    padding-top: 50px;
 }
 
 .wid img {
@@ -131,6 +157,7 @@ h3 {
     font-weight: 500;
     font-size: 25px;
     line-height: 50px;
+    letter-spacing: 1.22px;
     text-align: center;
     color: #000000;
 }
@@ -139,7 +166,8 @@ h3 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 1.22px;
     line-height: 33px;
     text-align: center;
     color: #767676;
@@ -154,17 +182,17 @@ h3 {
 
 /* ********* Work Section ********** */
 .work {
-    background: #F8F8F8;
+    background: #f8f9fa;
     padding-top: 50px;
     padding-bottom: 70px;
 }
 
 .work .card {
     margin: 100px auto;
-    width: 100%;
-    height: 456px;
+    width: 90%;
+    height: 500px;
     background: #FFFFFF;
-    box-shadow: 0px 37px 37px -22px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 70px 140px 0 rgba(130,136,171,.2);
     border-radius: 20px;
     overflow: hidden;
     display: flex;
@@ -177,9 +205,11 @@ h3 {
     padding: 50px;
 }
 
+
 .work .card img {
     width: 633px;
-    height: 456px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work .card span {
@@ -188,31 +218,35 @@ h3 {
 
 .work .card h4 {
     font-family: 'Nunito';
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 34px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
     color: #15203D;
-    margin: 30px auto;
+    margin-top: 30px;
+    letter-spacing: 1.22px;
 }
 
 .work .card p {
     font-family: 'Poppins';
     font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    color: #767676;
+    font-size: 14px;
+    letter-spacing: .44px;
+    color: #8c93bd;
+    letter-spacing: 1.22px;
 }
 
 .work .card button {
-    width: 130px;
-    height: 47px;
-    background: linear-gradient(132.8deg, #4FBBF9 8.18%, rgba(14, 165, 250, 0.72) 83.16%);
-    box-shadow: 0px 12px 22px -10px rgba(0, 0, 0, 0.28);
+    letter-spacing: 1.22px;
+    margin-top: 35px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg,#72e9f3 -20%,#404de6 120%);
+    box-shadow: 0 11px 36px 0 rgba(70,89,138,.25);
     font-family: 'Nunito';
     color: #FFFFFF;
     border: 0;
     outline: none;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .work a span {
@@ -223,10 +257,14 @@ h3 {
         text-align: center;
         color: #767676;
         cursor: pointer;
+        letter-spacing: 1.22px;
 }
 
 
 /* ***tools & Skilss ******* */
+.ts {
+    padding-top: 100px;
+}
 .tools {
     display: flex;
     justify-content: center;
@@ -256,6 +294,11 @@ h3 {
     margin: 5px auto;
 }
 
+.footer .logo img {
+    width: 70px;
+    height: 80px;
+}
+
 .footer .social {
     margin: 5px auto;
 }
@@ -273,12 +316,18 @@ h3 {
 }
 
 .footer .txt {
+    margin: 30px auto;
+    
+}
+
+.footer .txt a {
     font-family: 'Playfair Display', serif;
-    margin: auto;
     font-size: 15px;
     line-height: 27px;
     color: #979797;
     cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 1.22px;
 }
 
 
@@ -471,7 +520,7 @@ h3 {
 
 @media(max-width: 474px) {
     h3 {
-        font-size: 35px;
+        font-size: 32px;
     }
 
     .intro {
@@ -487,7 +536,7 @@ h3 {
     }
     
     .intro .left p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 35px;
     }
     
@@ -522,6 +571,10 @@ h3 {
         /* margin: 5px auto; */
         margin: 10px auto 0 auto;
     } 
+
+    .wid .teaching {
+        padding-bottom: 50px;
+    }
     
     .wid h4 {
         font-size: 20px;
@@ -535,8 +588,8 @@ h3 {
 
     .work .card {
         flex-direction: column-reverse;
-        width: 100%;
-        height: 650px;
+        width: 95%;
+        height: 600px;
     }
 
     .work .card .text {
@@ -546,13 +599,13 @@ h3 {
 
     .work .card img {
         width: 100%;
-        height: 500px;
+        height: 550px;
         object-fit: cover;
     }
 
     .work .card h4 {
         font-size: 22px;
-        
+        margin: 10px auto;
     }
     
     .work .card p {
