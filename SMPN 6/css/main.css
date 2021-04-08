@@ -60,14 +60,12 @@ header .navbar {
 }
 
 header .navbar a {
-    font-family: 'Poppins', sans-serif;
     color: #192534;
     font-weight: 500;
     font-size: 14px;
 }
 
 header .brand {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 23px;
@@ -82,7 +80,6 @@ header .navbar .btn {
 }
 
 header .navbar .learn {
-    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -149,7 +146,6 @@ header .navbar .learn {
 
 .hero button a {
     position: relative;
-    font-family: Poppins;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
