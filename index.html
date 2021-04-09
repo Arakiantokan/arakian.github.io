@@ -22,7 +22,16 @@
 <body>
     <header>
         <div class="container">
-            <!-- <i class="fas fa-bars"></i> -->
+            <img id="logo" src="img/Logo.png" alt="" >
+            
+
+            <nav id="sidebar">
+                <ul>
+                    <li><a href="https://dribbble.com/deadxcrown" target="_blank" rel="nofollow">Dribbble</a></li>
+                    <li><a href="mailto:alex.carolus@yahoo.com" target="_blank" rel="nofollow">Email Me</a></li>
+                </ul>
+            </nav>
+            <i id="menuBtn" class="fas fa-bars"></i>
         </div>
     </header>
 
@@ -161,6 +170,21 @@
 
 
     <Script type="text/javascript">
+
+        var menuBtn = document.getElementById("menuBtn");
+        var sidebar = document.getElementById("sidebar");
+
+        sidebar.style.top ='-100%';
+        menuBtn.onclick = function () {
+            if (sidebar.style.top == '-100%'){
+                sidebar.style.top = '0'
+            }
+            else {
+                sidebar.style.top = '-100%'
+            }
+        }
+
+
         document.addEventListener("mousemove" , parallax);
         function parallax(e){
             this.querySelectorAll('.layer').forEach(layer => {
@@ -172,6 +196,8 @@
                 layer.style.transform = `translateX(${x}px) translateY(${y}px)`
             })
         }
+
+
     </Script>
 </body>
 </html>
